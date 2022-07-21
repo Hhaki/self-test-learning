@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+	box-sizing: border-box;
+}
+h1{
+	margin-bottom: 15px;
+	text-align: center;
+}
+/*p{
+	border: 1px solid black;
+	background-color: #A52A2A;
+	width: 90%;
+	height: 150%;
+	margin-right: auto;
+	margin-left: 12px;
+	font-family: helvetica;
+	color: white;
+	padding: 6px 8px 8px 6px;*/
+}
+p{
+	text-align: center;
+	margin-left: 8px;
+	margin-right: auto; 
+
+}
+.col-lg-1, .col-md-3 {
+	width: 400px;
+	height: 200px;
+	border: 3px solid;
+}
+.row {
+	width: 100%;
+}
+.relative {
+	position: relative;
+	width: 400px;
+	height: 200px;
+	border: 3px solid #73AD21;
+}
+.absolute {
+	position: absolute;
+	bottom: 80px;
+	right: -1.5px;
+	top: -1.5px;
+	width: 80px;
+	height: 40px;
+	border: 3px solid #73AD21;
+	background-color: green;
+	text-align: center;
+}
+
+@media (min-width: 1200px){
+	.col-lg-1, .col-lg-2, .col-lg-3
+	float:left;
+	border: 1px solid green;
+ }
+ .col-lg-1 {
+	width:  33.33%;
+ }
+ .col-lg-2 {
+	width: 66.67%;
+ }
+ .col-lg-3 {
+	width: 100%;
+ }
+@media (min-width: 768px) and (max-width: 991px) {
+ .col-md-1, .col-md-2, .col-md-3
+	float: left;
+	border: 1px solid blue;
+ }
+  .col-md-1{
+	width: 33.33%;
+ }
+ .col-md-2 {
+	width: 66.67%;
+ }
+ .col-md-3{
+	width: 100%;
+ }
+</style>
+</head>
+<body>
+	<h1>Our Menu</h1>
+	<div class="row">
+		<div class="relative"><p>Lorem ip it is sometimes known..</p>
+			<div class="absolute"><p1>Americano</p1></div>
+		</div>
+		<div class="col-lg-1 col-md-3"><p>Lorem ip it is sometimes known</p>
+			<div class="absolute"><p1>Expresso</p1></div>
+		</div>
+    </div>
+</body>
+</html>
